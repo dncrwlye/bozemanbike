@@ -4,23 +4,24 @@
 #'
 #' This function is so ch1LL and makes fake bike count data for our lovely city
 #' @param sigma.sq You know what it is
-#' @param tau.sq jkj
-#' @param phi Ykkk
+#' @param tau.sq 
+#' @param phi 
+#' @param beta covariate slope 
 #' @keywords Bozeman
 #' @export
 #' @examples
 #' datagen()
 
-
-datagen <- function(sigma.sq, tau.sq, phi)
+datagen <- function(sigma.sq, tau.sq, phi, beta)
 {
-  
   load(file = 'data/data.Rdata')
   set.seed(203933)
   num.pts <- nrow(data)
-  sigma.sq <- sigma.sq # 3
-  tau.sq <- tau.sq #.1
-  phi <- phi# 20
+  sigma.sq <- sigma.sq 
+  tau.sq <- tau.sq 
+  phi <- phi
+  beta = beta
+  
   points <- cbind(data$lat, data$lon)
   
   d22 <- as.matrix(dist(points))
@@ -30,12 +31,12 @@ datagen <- function(sigma.sq, tau.sq, phi)
   
   # covariate structure
   x <- rnorm(num.pts, mean = mean(log(data$count + 1), na.rm = TRUE), sd = sd(log(data$count + 1), na.rm = TRUE))
-  Beta = 1.4
-  mu2 <- Beta*x + rnorm(num.pts,0,.4)
+  mu2 <- beta*x + rnorm(num.pts,0,.4)
   #plot(z,x)
   z2 = mnormt::rmnorm(1, mu2, Omega)
   data$z2 <- z2
   data$x <- x
   
+  return(data)
 }
 
