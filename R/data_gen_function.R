@@ -12,7 +12,7 @@
 #' @examples
 #' datagen()
 
-datagen <- function(sigma.sq, tau.sq, phi, beta)
+datagen <- function(sigma.sq, tau.sq, phi, beta, data)
 {
   set.seed(203933)
   num.pts <- nrow(data)
