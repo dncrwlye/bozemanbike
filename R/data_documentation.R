@@ -4,7 +4,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(data)
+#' @usage data(bozemanbike)
 #'
 #' @format An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
 #'
@@ -13,7 +13,7 @@
 #'
 #'
 #' @examples
-#' data(data)
+#' data(bozemanbike)
 "data"
 
 LazyData: true
