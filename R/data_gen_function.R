@@ -14,7 +14,6 @@
 
 datagen <- function(sigma.sq, tau.sq, phi, beta)
 {
-  load(file = 'data/data.Rdata')
   set.seed(203933)
   num.pts <- nrow(data)
   sigma.sq <- sigma.sq 
