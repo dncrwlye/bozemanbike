@@ -16,7 +16,7 @@ datagen(sigma.sq, tau.sq, phi, beta)
 \item{beta}{covariate slope}
 }
 \description{
-This function is so ch1LL and makes fake bike count data for our lovely city
+why am i so bad at this...
 }
 \examples{
 datagen()
