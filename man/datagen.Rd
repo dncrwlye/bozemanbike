@@ -4,7 +4,7 @@
 \alias{datagen}
 \title{A Spatial Process Function for Bozeman Bike Commuter Data}
 \usage{
-datagen(sigma.sq, tau.sq, phi, beta)
+datagen(sigma.sq, tau.sq, phi, beta, data)
 }
 \arguments{
 \item{sigma.sq}{You know what it is}
