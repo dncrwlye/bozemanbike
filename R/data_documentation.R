@@ -16,4 +16,4 @@
 #' data(bozemanbike)
 "data"
 
-LazyData: true
+#LazyData: true
