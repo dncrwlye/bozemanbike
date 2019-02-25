@@ -14,6 +14,6 @@ save.data <- function()
 {
   load(file = 'data/data.Rdata')
   write.csv(data, file = './bozeman_bike_commuter.csv')
+  
 }
   
-save.data()
