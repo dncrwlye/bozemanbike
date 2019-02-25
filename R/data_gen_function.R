@@ -2,7 +2,7 @@
 
 #' A Spatial Process Function for Bozeman Bike Commuter Data
 #'
-#' This function is so ch1LL and makes fake bike count data for our lovely city
+#' why am i so bad at this...
 #' @param sigma.sq You know what it is
 #' @param tau.sq 
 #' @param phi 
